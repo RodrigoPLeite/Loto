@@ -1,0 +1,12 @@
+public class Main
+{
+	public static void main(String[] args) {
+	String[] numeros = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"};
+	String[] sorteio = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"};
+	
+	ConferirResultado r = new ConferirResultado();
+	//r.resultados(numeros, sorteio);
+	VerQuantasVezesSaiuJunto v = new VerQuantasVezesSaiuJunto();
+	v.resultados(numeros, sorteio);
+	}
+}
