@@ -14,13 +14,18 @@ public class Sorteio {
         return lista;
     }
 
-    public void numerosSorteados() {
+    public List<Integer> numerosSorteados() {
         int contador = 0;
+        List<Integer> numerosSorteados = new ArrayList<>();
         List<Integer> lista = numerosDisponiveis();
         Collections.shuffle(lista);
+        System.out.print("Números Sorteados: ");
         while (contador < 15) {
-            System.out.print(lista.get(contador) + " / ");
+            System.out.print(lista.get(contador) + " - ");
+            numerosSorteados.add(lista.get(contador));
             contador++;
         }
+        System.out.println("\n");
+        return numerosSorteados;
     }
 }
