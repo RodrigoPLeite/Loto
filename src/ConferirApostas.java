@@ -23,10 +23,8 @@ public class ConferirApostas {
                 System.out.println("Você ganhou R$ 25,00");
             } else if (numeroAcertos == 14) {
                 System.out.println("Você ganhou R$ 1100,00");
-                break;
             } else if (numeroAcertos == 15) {
                 System.out.println("Você ganhou o prêmio máximo... Parabéns!!!");
-                break;
             }
             numeroAcertos = 0;
         }
