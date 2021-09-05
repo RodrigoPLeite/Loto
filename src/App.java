@@ -2,5 +2,6 @@ public class App {
     public static void main(String[] args) throws Exception {
         Sorteio sorteio = new Sorteio();
         sorteio.numerosSorteados();
+        ApostasFeitas apostas = new ApostasFeitas();
     }
 }
