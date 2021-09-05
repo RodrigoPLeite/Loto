@@ -19,13 +19,13 @@ public class Sorteio {
         List<Integer> numerosSorteados = new ArrayList<>();
         List<Integer> lista = numerosDisponiveis();
         Collections.shuffle(lista);
-        System.out.print("Números Sorteados: ");
+        System.out.print("\n\nNúmeros Sorteados: \n");
         while (contador < 15) {
             System.out.print(lista.get(contador) + " - ");
             numerosSorteados.add(lista.get(contador));
             contador++;
         }
-        System.out.println("\n");
+        System.out.print("\n");
         return numerosSorteados;
     }
 }

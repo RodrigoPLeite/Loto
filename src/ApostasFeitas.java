@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -11,8 +10,10 @@ public class ApostasFeitas {
         List<Integer> lista = s.numerosDisponiveis();
         Collections.shuffle(lista);
         for (int i = 0; i < quantApostas; i++) {
+            System.out.print("\nAposta nº " + (i + 1) + " - ");
             while (contador < numerosApostados) {
                 apostas[i][contador] = lista.get(contador);
+                System.out.print(apostas[i][contador] + " ");
                 contador++;
             }
             Collections.shuffle(lista);
