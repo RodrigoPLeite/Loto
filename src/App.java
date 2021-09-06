@@ -4,9 +4,12 @@ public class App {
         // sorteio.numerosSorteados();
         ApostasFeitas apostas = new ApostasFeitas();
         // apostas.apostaFeitaSurpresinha();
-        int numeroDeJogos = 10; // quantidade de apostas
+        int numeroDeJogos = 1; // quantidade de apostas
+        int quantDeNumerosJogados = 15;
         ConferirApostas confApostas = new ConferirApostas();
-        confApostas.conferirApostas(apostas.apostaFeitaSurpresinha(15, numeroDeJogos), sorteio.numerosSorteados(),
-                numeroDeJogos);
+        // confApostas.conferirApostas(apostas.apostaFeitaSurpresinha(quantDeNumerosJogados,
+        // numeroDeJogos),
+        // sorteio.numerosSorteados(), numeroDeJogos);
+        apostas.apostaCartao(quantDeNumerosJogados, numeroDeJogos);
     }
 }
