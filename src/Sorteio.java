@@ -21,9 +21,13 @@ public class Sorteio {
         Collections.shuffle(lista);
         System.out.print("\n\nNúmeros Sorteados: \n");
         while (contador < 15) {
-            System.out.print(lista.get(contador) + " - ");
+            // System.out.print(lista.get(contador) + " - ");
             numerosSorteados.add(lista.get(contador));
             contador++;
+        }
+        Collections.sort(numerosSorteados); // coloca na ordem crescente
+        for (int i = 0; i < 15; i++) {
+            System.out.print(numerosSorteados.get(i) + " - ");
         }
         System.out.print("\n");
         return numerosSorteados;
