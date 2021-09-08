@@ -21,18 +21,21 @@ public class Sorteio {
         Collections.shuffle(lista);
         System.out.print("\n\nNúmeros Sorteados: \n");
 
-        while (contador < 15) { // System.out.print(lista.get(contador) + " - ");
+        // Sorteio dos números aleatoriamente
+        while (contador < 15) {
             numerosSorteados.add(lista.get(contador));
             contador++;
         }
 
         /*
-         * numerosSorteados.add(2); numerosSorteados.add(3); numerosSorteados.add(8);
-         * numerosSorteados.add(12); numerosSorteados.add(13); numerosSorteados.add(14);
-         * numerosSorteados.add(15); numerosSorteados.add(16); numerosSorteados.add(17);
-         * numerosSorteados.add(19); numerosSorteados.add(21); numerosSorteados.add(22);
-         * numerosSorteados.add(23); numerosSorteados.add(24); numerosSorteados.add(25);
+         * Se quiser colocar os números sorteados manualmente numerosSorteados.add(2);
+         * numerosSorteados.add(3); numerosSorteados.add(8); numerosSorteados.add(12);
+         * numerosSorteados.add(13); numerosSorteados.add(14); numerosSorteados.add(15);
+         * numerosSorteados.add(16); numerosSorteados.add(17); numerosSorteados.add(19);
+         * numerosSorteados.add(21); numerosSorteados.add(22); numerosSorteados.add(23);
+         * numerosSorteados.add(24); numerosSorteados.add(25);
          */
+
         Collections.sort(numerosSorteados); // coloca na ordem crescente
         for (int i = 0; i < 15; i++) {
             System.out.print(numerosSorteados.get(i) + " - ");
